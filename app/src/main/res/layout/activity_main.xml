@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hooney.net_tutorial.MainActivity">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:gravity="center|left"
+                android:id="@+id/method"
+                android:hint="Method 정의 [Default : GET]"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:gravity="center|left"
+                android:id="@+id/url"
+                android:layout_weight="1"
+                android:hint="URL 작성하기"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_weight="5"
+                android:text="Send"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/result"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="서버 결과 값 표시..."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
